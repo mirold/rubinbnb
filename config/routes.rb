@@ -1,4 +1,14 @@
 Rubinbnb::Application.routes.draw do
+  get "bnb/home"
+
+  get "bnb/login"
+
+  get "bnb/singup"
+
+  get "bnb/profile"
+
+  get "bnb/invites"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

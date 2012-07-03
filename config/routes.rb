@@ -1,13 +1,16 @@
 Rubinbnb::Application.routes.draw do
-  get "bnb/home"
+  root to: 'bnb#home'
 
-  get "bnb/login"
+  match "/login", to: "bnb#login"
+  match "/singup", to: "bnb#singup"
+  match "/profile", to: "bnb#profile"
+  match "/invites", to: "bnb#invites"      
 
-  get "bnb/singup"
-
-  get "bnb/profile"
-
-  get "bnb/invites"
+  #get "bnb/home"
+  #get "bnb/login"
+  #get "bnb/singup"
+  #get "bnb/profile"
+  #get "bnb/invites"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
